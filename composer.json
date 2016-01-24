@@ -1,0 +1,28 @@
+{
+    "name": "alexeevdv/yii2-adldap",
+    "description": "Yii2 wrapper for Adldap",
+    "keywords": ["yii2", "adldap"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "support": {
+        "source": "https://github.com/alexeevdv/yii2-adldap",
+        "issues": "https://github.com/alexeevdv/yii2-adldap/issues"
+    },
+    "authors": [
+        {
+            "name": "alexeevdv",
+            "homepage": "https://alexeevdv.ru/",
+            "email": "mail@alexeevdv.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "yiisoft/yii2": "*",
+        "adldap2/adldap2": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "alexeevdv\\adldap\\": "src"
+        }
+    }
+}
