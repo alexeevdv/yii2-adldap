@@ -4,12 +4,19 @@ namespace alexeevdv\adldap;
 
 class Adldap extends \yii\base\Component
 {
+    /**
+     * Options that will be passed to original Adldap class
+     */
     public $options = [];
 
+    /**
+     * Original class instance
+     */
     private $_instance;    
 
     public function init()
     {
+        parent::init():        
         $this->_instance = new \Adldap\Adldap($this->options);
     }
 
