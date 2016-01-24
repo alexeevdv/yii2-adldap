@@ -8,11 +8,11 @@ The preferred way to install this extension is through [Composer](https://getcom
 
 Either run
 
-composer require alexeevdv/yii2-adldap "@dev"
+    composer require alexeevdv/yii2-adldap "@dev"
 
 or add
 
-"alexeevdv/yii2-adldap": "@dev"
+    "alexeevdv/yii2-adldap": "@dev"
 
 to the require section of your composer.json
 
@@ -20,6 +20,7 @@ to the require section of your composer.json
 
 Add this code in your components section of the application configuration (eg. config/main.php):
 
+```php
 'components' => [
     ...
     'ldap' => [
@@ -35,6 +36,7 @@ Add this code in your components section of the application configuration (eg. c
     ],
     ...
 ]
+```
 
 All options and methods are the same as in original class. Take a look at [documentation](https://github.com/Adldap2/Adldap2) if you need more info.
 
@@ -42,7 +44,8 @@ All options and methods are the same as in original class. Take a look at [docum
 
 Authentication with username and password:
 
-if (\yii::$app->ldap->authenticate("username", "password))
+```php
+if (\yii::$app->ldap->authenticate("username", "password"))
 {
     // We are goood
 }
@@ -50,4 +53,4 @@ else
 {
     // Authentication failed
 }
-
+```
