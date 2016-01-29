@@ -28,7 +28,7 @@ Add this code in your components section of the application configuration (eg. c
         'options' => [
             'domain_controllers' => [
                 '192.168.0.1',
-                '192.168.0,2'
+                '192.168.0.2'
             ],
             'account_suffix' =>  '@test.lan',
             'base_dn' => "DC=test,DC=lan",
