@@ -16,7 +16,7 @@ class Adldap extends \yii\base\Component
 
     public function init()
     {
-        parent::init():        
+        parent::init();
         $this->_instance = new \Adldap\Adldap($this->options);
     }
 
