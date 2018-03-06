@@ -1,4 +1,4 @@
-# yii2-adldap
+# Yii2-adldap
 
 This is Yii2 wrapper for [PHP LDAP Library](https://github.com/adLDAP2/adLDAP2). It provides ability to use original Adldap class as Yii2 component.
 
@@ -8,11 +8,11 @@ The preferred way to install this extension is through [Composer](https://getcom
 
 Either run
 
-    composer require alexeevdv/yii2-adldap "@dev"
+    composer require alexeevdv/yii2-adldap "~1.0.0"
 
 or add
 
-    "alexeevdv/yii2-adldap": "@dev"
+    "alexeevdv/yii2-adldap": "~1.0.0"
 
 to the require section of your composer.json
 
@@ -24,7 +24,7 @@ Add this code in your components section of the application configuration (eg. c
 'components' => [
     ...
     'ldap' => [
-        'class' => 'alexeevdv\adldap\Adldap',
+        'class' => \alexeevdv\adldap\Adldap::class,
         'options' => [
             'domain_controllers' => [
                 '192.168.0.1',
@@ -45,12 +45,9 @@ All options and methods are the same as in original class. Take a look at [docum
 Authentication with username and password:
 
 ```php
-if (\yii::$app->ldap->authenticate("username", "password"))
-{
+if (Yii::$app->ldap->authenticate("username", "password")) {
     // We are goood
-}
-else
-{
+} else {
     // Authentication failed
 }
 ```
